@@ -30,6 +30,6 @@ spec:
     app: trial
   ports:
     - name: trial
-      port: 8082
+      port: 8083
       targetPort: 8080
   type: LoadBalancer

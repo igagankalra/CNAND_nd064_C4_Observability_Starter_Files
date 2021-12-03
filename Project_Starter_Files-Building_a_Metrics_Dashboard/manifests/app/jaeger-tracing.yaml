@@ -1,5 +1,6 @@
 apiVersion: jaegertracing.io/v1
 kind: Jaeger
 metadata:
-  name: jaeger-tracing
-  namespace: default
+  name: my-traces
+  namespace: observability
+# kubectl port-forward service/my-traces-query --address 0.0.0.0 16686:16686 -n observability
