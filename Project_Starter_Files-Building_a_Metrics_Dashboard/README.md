@@ -2,6 +2,19 @@
 
 ## Verify the monitoring installation
 
+```Shell
+$ kubectl create namespace monitoring
+namespace/monitoring created                                                                        (master)       
+
+gagandeep.singh5@del1-lhp-n68299 MINGW64 /d/udacity_suse/CNAND_nd064_C4_Observability_Starter_Files (master)
+$ kubectl get ns                                                                                    (master)       
+NAME              STATUS   AGE
+default           Active   3h6m
+kube-system       Active   3h6m
+kube-public       Active   3h6m
+kube-node-lease   Active   3h6m
+monitoring        Active   5s
+```
 *TODO:* run `kubectl` command to show the running pods and services for all components. Take a screenshot of the output and include it here to verify the installation
 
 ## Setup the Jaeger and Prometheus source
