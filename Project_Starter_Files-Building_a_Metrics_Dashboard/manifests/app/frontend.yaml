@@ -33,3 +33,5 @@ spec:
       port: 8082
       targetPort: 8080
   type: LoadBalancer
+
+  #  kubectl port-forward svc/frontend-service 8080:8082

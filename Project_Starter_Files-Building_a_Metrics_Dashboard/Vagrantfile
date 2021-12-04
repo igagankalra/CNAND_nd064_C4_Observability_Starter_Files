@@ -10,21 +10,21 @@ Vagrant.configure("2") do |config|
     master.vm.network "private_network", ip: "192.168.33.10", virtualbox__intnet: true
     master.vm.network "forwarded_port", guest: 22, host: 2222, id: "ssh", disabled: true
     master.vm.network "forwarded_port", guest: 22, host: 2000 # Master Node SSH
-    master.vm.network "forwarded_port", guest: 80, host: 8080
-    master.vm.network "forwarded_port", guest: 9090, host: 9090
-    master.vm.network "forwarded_port", guest: 8080, host: 8080
-    #master.vm.network "forwarded_port", guest: 8888, host: 8080
-    master.vm.network "forwarded_port", guest: 9090, host: 8888
-    master.vm.network "forwarded_port", guest: 3000, host: 3000
-    master.vm.network "forwarded_port", guest: 3030, host: 3030
-    master.vm.network "forwarded_port", guest: 8080, host: 8080
-    master.vm.network "forwarded_port", guest: 16686, host: 8088
+    config.vm.network "forwarded_port", guest: 80, host: 8080
+    config.vm.network "forwarded_port", guest: 9090, host: 9090
+    config.vm.network "forwarded_port", guest: 8080, host: 8080
+    #config.vm.network "forwarded_port", guest: 8888, host: 8080 
+    config.vm.network "forwarded_port", guest: 9090, host: 8888
+    config.vm.network "forwarded_port", guest: 3000, host: 3000
+    config.vm.network "forwarded_port", guest: 3030, host: 3030
+    config.vm.network "forwarded_port", guest: 8081, host: 8081
     config.vm.network "forwarded_port", guest: 8082, host: 8082
     config.vm.network "forwarded_port", guest: 8083, host: 8083
-    #master.vm.network "forwarded_port", guest: 8000, host: 8888
-    master.vm.network "forwarded_port", guest: 8888, host: 8888
-    master.vm.network "forwarded_port", guest: 8000, host: 8000
-    config.vm.network "forwarded_port", guest: 6443, host: 6443 
+    config.vm.network "forwarded_port", guest: 16686, host: 8088
+    #config.vm.network "forwarded_port", guest: 8000, host: 8888
+    config.vm.network "forwarded_port", guest: 8888, host: 8888
+    config.vm.network "forwarded_port", guest: 8000, host: 8000
+    config.vm.network "forwarded_port", guest: 6443, host: 6443 # API Access
     master.vm.provider "virtualbox" do |v|
       v.memory = "4096"
       #vb.memory = "2048"
