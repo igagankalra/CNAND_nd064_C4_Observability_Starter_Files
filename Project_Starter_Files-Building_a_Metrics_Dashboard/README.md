@@ -48,7 +48,8 @@ For SLO (service Level Object) of monthly uptime of 99.9% every month. As for re
 
 ## Jaeger in Dashboards
 *TODO:* Now that the trace is running, let's add the metric to our current Grafana dashboard. Once this is completed, provide a screenshot of it here.
-10. [Flask Trace](answer-img/jaeger_backemnd_grafana.png)
+
+10. [Jaegar Garfana](answer-img/jaeger_backemnd_grafana.png)
 
 
 ## Report Error
@@ -113,4 +114,4 @@ Error rate:
 - Average CPU used - It shows the average CPU used.
 - Network I/O Pressure - It shows the amount of I/O operations in the node.
 
-11. [Flask Trace](answer-img/final_dashboard_grafana.png)
+11. [Final Dashboard](answer-img/final_dashboard_grafana.png)
