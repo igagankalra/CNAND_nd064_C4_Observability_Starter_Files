@@ -9,10 +9,12 @@
 
 ## Setup the Jaeger and Prometheus source
 *TODO:* Expose Grafana to the internet and then setup Prometheus as a data source. Provide a screenshot of the home page after logging into Grafana.
+
 3. [grafana](answer-img/grafana_3.PNG)
 
 ## Create a Basic Dashboard
 *TODO:* Create a dashboard in Grafana that shows Prometheus as a source. Take a screenshot and include it here.
+
 4. [Grafana Custom Dashboard](answer-img/custom_grafana_dashboard.PNG)
 ## Describe SLO/SLI
 *TODO:* Describe, in your own words, what the SLIs are, based on an SLO of *monthly uptime* and *request response time*.
@@ -34,11 +36,13 @@ For SLO (service Level Object) of monthly uptime of 99.9% every month. As for re
 
 ## Create a Dashboard to measure our SLIs
 *TODO:* Create a dashboard to measure the uptime of the frontend and backend services We will also want to measure to measure 40x and 50x errors. Create a dashboard that show these values over a 24 hour period and take a screenshot.
+
 7. [Dashboard 1](answer-img/dashboard_1.png)
 8. [Dashboard 2](answer-img/dashboard_2.png)
 
 ## Tracing our Flask App
 *TODO:*  We will create a Jaeger span to measure the processes on the backend. Once you fill in the span, provide a screenshot of it here. Also provide a (screenshot) sample Python file containing a trace and span code used to perform Jaeger traces on the backend service.
+
 9. [Flask Trace](answer-img/flask_trace.png)
 
 
